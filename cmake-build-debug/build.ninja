@@ -39,13 +39,13 @@ include CMakeFiles/rules.ninja
 #############################################
 # Logical path to working directory; prefix for absolute paths.
 
-cmake_ninja_workdir = /home/artem/dev/cpp/image_processor/cmake-build-debug/
+cmake_ninja_workdir = /home/artem/dev/cpp/ImageProcessor/cmake-build-debug/
 
 #############################################
 # Utility command for rebuild_cache
 
 build CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = cd /home/artem/dev/cpp/image_processor/cmake-build-debug && /snap/clion/184/bin/cmake/linux/bin/cmake --regenerate-during-build -S/home/artem/dev/cpp/image_processor -B/home/artem/dev/cpp/image_processor/cmake-build-debug
+  COMMAND = cd /home/artem/dev/cpp/ImageProcessor/cmake-build-debug && /snap/clion/184/bin/cmake/linux/bin/cmake --regenerate-during-build -S/home/artem/dev/cpp/ImageProcessor -B/home/artem/dev/cpp/ImageProcessor/cmake-build-debug
   DESC = Running CMake to regenerate build system...
   pool = console
   restat = 1
@@ -57,7 +57,7 @@ build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 # Utility command for edit_cache
 
 build CMakeFiles/edit_cache.util: CUSTOM_COMMAND
-  COMMAND = cd /home/artem/dev/cpp/image_processor/cmake-build-debug && /snap/clion/184/bin/cmake/linux/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+  COMMAND = cd /home/artem/dev/cpp/ImageProcessor/cmake-build-debug && /snap/clion/184/bin/cmake/linux/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
   DESC = No interactive CMake dialog available...
   restat = 1
 
@@ -72,7 +72,7 @@ build edit_cache: phony CMakeFiles/edit_cache.util
 
 build cmake_object_order_depends_target_image_processor: phony || CMakeFiles/image_processor.dir
 
-build CMakeFiles/image_processor.dir/image_processor.cpp.o: CXX_COMPILER__image_processor_Debug /home/artem/dev/cpp/image_processor/image_processor.cpp || cmake_object_order_depends_target_image_processor
+build CMakeFiles/image_processor.dir/image_processor.cpp.o: CXX_COMPILER__image_processor_Debug /home/artem/dev/cpp/ImageProcessor/image_processor.cpp || cmake_object_order_depends_target_image_processor
   DEP_FILE = CMakeFiles/image_processor.dir/image_processor.cpp.o.d
   FLAGS = -O2 -Werror -Wall -Wextra -fsanitize=address,undefined -fno-sanitize-recover=all -g -Wall -Werror -Wextra -O2 -std=gnu++20
   OBJECT_DIR = CMakeFiles/image_processor.dir
@@ -80,7 +80,7 @@ build CMakeFiles/image_processor.dir/image_processor.cpp.o: CXX_COMPILER__image_
   TARGET_COMPILE_PDB = CMakeFiles/image_processor.dir/
   TARGET_PDB = image_processor.pdb
 
-build CMakeFiles/image_processor.dir/argument_parses.cpp.o: CXX_COMPILER__image_processor_Debug /home/artem/dev/cpp/image_processor/argument_parses.cpp || cmake_object_order_depends_target_image_processor
+build CMakeFiles/image_processor.dir/argument_parses.cpp.o: CXX_COMPILER__image_processor_Debug /home/artem/dev/cpp/ImageProcessor/argument_parses.cpp || cmake_object_order_depends_target_image_processor
   DEP_FILE = CMakeFiles/image_processor.dir/argument_parses.cpp.o.d
   FLAGS = -O2 -Werror -Wall -Wextra -fsanitize=address,undefined -fno-sanitize-recover=all -g -Wall -Werror -Wextra -O2 -std=gnu++20
   OBJECT_DIR = CMakeFiles/image_processor.dir
@@ -88,7 +88,7 @@ build CMakeFiles/image_processor.dir/argument_parses.cpp.o: CXX_COMPILER__image_
   TARGET_COMPILE_PDB = CMakeFiles/image_processor.dir/
   TARGET_PDB = image_processor.pdb
 
-build CMakeFiles/image_processor.dir/image.cpp.o: CXX_COMPILER__image_processor_Debug /home/artem/dev/cpp/image_processor/image.cpp || cmake_object_order_depends_target_image_processor
+build CMakeFiles/image_processor.dir/image.cpp.o: CXX_COMPILER__image_processor_Debug /home/artem/dev/cpp/ImageProcessor/image.cpp || cmake_object_order_depends_target_image_processor
   DEP_FILE = CMakeFiles/image_processor.dir/image.cpp.o.d
   FLAGS = -O2 -Werror -Wall -Wextra -fsanitize=address,undefined -fno-sanitize-recover=all -g -Wall -Werror -Wextra -O2 -std=gnu++20
   OBJECT_DIR = CMakeFiles/image_processor.dir
@@ -96,7 +96,7 @@ build CMakeFiles/image_processor.dir/image.cpp.o: CXX_COMPILER__image_processor_
   TARGET_COMPILE_PDB = CMakeFiles/image_processor.dir/
   TARGET_PDB = image_processor.pdb
 
-build CMakeFiles/image_processor.dir/filters/filters.cpp.o: CXX_COMPILER__image_processor_Debug /home/artem/dev/cpp/image_processor/filters/filters.cpp || cmake_object_order_depends_target_image_processor
+build CMakeFiles/image_processor.dir/filters/filters.cpp.o: CXX_COMPILER__image_processor_Debug /home/artem/dev/cpp/ImageProcessor/filters/filters.cpp || cmake_object_order_depends_target_image_processor
   DEP_FILE = CMakeFiles/image_processor.dir/filters/filters.cpp.o.d
   FLAGS = -O2 -Werror -Wall -Wextra -fsanitize=address,undefined -fno-sanitize-recover=all -g -Wall -Werror -Wextra -O2 -std=gnu++20
   OBJECT_DIR = CMakeFiles/image_processor.dir
@@ -104,7 +104,7 @@ build CMakeFiles/image_processor.dir/filters/filters.cpp.o: CXX_COMPILER__image_
   TARGET_COMPILE_PDB = CMakeFiles/image_processor.dir/
   TARGET_PDB = image_processor.pdb
 
-build CMakeFiles/image_processor.dir/filters/blur.cpp.o: CXX_COMPILER__image_processor_Debug /home/artem/dev/cpp/image_processor/filters/blur.cpp || cmake_object_order_depends_target_image_processor
+build CMakeFiles/image_processor.dir/filters/blur.cpp.o: CXX_COMPILER__image_processor_Debug /home/artem/dev/cpp/ImageProcessor/filters/blur.cpp || cmake_object_order_depends_target_image_processor
   DEP_FILE = CMakeFiles/image_processor.dir/filters/blur.cpp.o.d
   FLAGS = -O2 -Werror -Wall -Wextra -fsanitize=address,undefined -fno-sanitize-recover=all -g -Wall -Werror -Wextra -O2 -std=gnu++20
   OBJECT_DIR = CMakeFiles/image_processor.dir
@@ -112,7 +112,7 @@ build CMakeFiles/image_processor.dir/filters/blur.cpp.o: CXX_COMPILER__image_pro
   TARGET_COMPILE_PDB = CMakeFiles/image_processor.dir/
   TARGET_PDB = image_processor.pdb
 
-build CMakeFiles/image_processor.dir/filters/crop.cpp.o: CXX_COMPILER__image_processor_Debug /home/artem/dev/cpp/image_processor/filters/crop.cpp || cmake_object_order_depends_target_image_processor
+build CMakeFiles/image_processor.dir/filters/crop.cpp.o: CXX_COMPILER__image_processor_Debug /home/artem/dev/cpp/ImageProcessor/filters/crop.cpp || cmake_object_order_depends_target_image_processor
   DEP_FILE = CMakeFiles/image_processor.dir/filters/crop.cpp.o.d
   FLAGS = -O2 -Werror -Wall -Wextra -fsanitize=address,undefined -fno-sanitize-recover=all -g -Wall -Werror -Wextra -O2 -std=gnu++20
   OBJECT_DIR = CMakeFiles/image_processor.dir
@@ -120,7 +120,7 @@ build CMakeFiles/image_processor.dir/filters/crop.cpp.o: CXX_COMPILER__image_pro
   TARGET_COMPILE_PDB = CMakeFiles/image_processor.dir/
   TARGET_PDB = image_processor.pdb
 
-build CMakeFiles/image_processor.dir/filters/sharpening.cpp.o: CXX_COMPILER__image_processor_Debug /home/artem/dev/cpp/image_processor/filters/sharpening.cpp || cmake_object_order_depends_target_image_processor
+build CMakeFiles/image_processor.dir/filters/sharpening.cpp.o: CXX_COMPILER__image_processor_Debug /home/artem/dev/cpp/ImageProcessor/filters/sharpening.cpp || cmake_object_order_depends_target_image_processor
   DEP_FILE = CMakeFiles/image_processor.dir/filters/sharpening.cpp.o.d
   FLAGS = -O2 -Werror -Wall -Wextra -fsanitize=address,undefined -fno-sanitize-recover=all -g -Wall -Werror -Wextra -O2 -std=gnu++20
   OBJECT_DIR = CMakeFiles/image_processor.dir
@@ -128,7 +128,7 @@ build CMakeFiles/image_processor.dir/filters/sharpening.cpp.o: CXX_COMPILER__ima
   TARGET_COMPILE_PDB = CMakeFiles/image_processor.dir/
   TARGET_PDB = image_processor.pdb
 
-build CMakeFiles/image_processor.dir/filters/edge.cpp.o: CXX_COMPILER__image_processor_Debug /home/artem/dev/cpp/image_processor/filters/edge.cpp || cmake_object_order_depends_target_image_processor
+build CMakeFiles/image_processor.dir/filters/edge.cpp.o: CXX_COMPILER__image_processor_Debug /home/artem/dev/cpp/ImageProcessor/filters/edge.cpp || cmake_object_order_depends_target_image_processor
   DEP_FILE = CMakeFiles/image_processor.dir/filters/edge.cpp.o.d
   FLAGS = -O2 -Werror -Wall -Wextra -fsanitize=address,undefined -fno-sanitize-recover=all -g -Wall -Werror -Wextra -O2 -std=gnu++20
   OBJECT_DIR = CMakeFiles/image_processor.dir
@@ -136,7 +136,7 @@ build CMakeFiles/image_processor.dir/filters/edge.cpp.o: CXX_COMPILER__image_pro
   TARGET_COMPILE_PDB = CMakeFiles/image_processor.dir/
   TARGET_PDB = image_processor.pdb
 
-build CMakeFiles/image_processor.dir/filters/grayscale.cpp.o: CXX_COMPILER__image_processor_Debug /home/artem/dev/cpp/image_processor/filters/grayscale.cpp || cmake_object_order_depends_target_image_processor
+build CMakeFiles/image_processor.dir/filters/grayscale.cpp.o: CXX_COMPILER__image_processor_Debug /home/artem/dev/cpp/ImageProcessor/filters/grayscale.cpp || cmake_object_order_depends_target_image_processor
   DEP_FILE = CMakeFiles/image_processor.dir/filters/grayscale.cpp.o.d
   FLAGS = -O2 -Werror -Wall -Wextra -fsanitize=address,undefined -fno-sanitize-recover=all -g -Wall -Werror -Wextra -O2 -std=gnu++20
   OBJECT_DIR = CMakeFiles/image_processor.dir
@@ -144,7 +144,7 @@ build CMakeFiles/image_processor.dir/filters/grayscale.cpp.o: CXX_COMPILER__imag
   TARGET_COMPILE_PDB = CMakeFiles/image_processor.dir/
   TARGET_PDB = image_processor.pdb
 
-build CMakeFiles/image_processor.dir/filters/negative.cpp.o: CXX_COMPILER__image_processor_Debug /home/artem/dev/cpp/image_processor/filters/negative.cpp || cmake_object_order_depends_target_image_processor
+build CMakeFiles/image_processor.dir/filters/negative.cpp.o: CXX_COMPILER__image_processor_Debug /home/artem/dev/cpp/ImageProcessor/filters/negative.cpp || cmake_object_order_depends_target_image_processor
   DEP_FILE = CMakeFiles/image_processor.dir/filters/negative.cpp.o.d
   FLAGS = -O2 -Werror -Wall -Wextra -fsanitize=address,undefined -fno-sanitize-recover=all -g -Wall -Werror -Wextra -O2 -std=gnu++20
   OBJECT_DIR = CMakeFiles/image_processor.dir
@@ -152,7 +152,7 @@ build CMakeFiles/image_processor.dir/filters/negative.cpp.o: CXX_COMPILER__image
   TARGET_COMPILE_PDB = CMakeFiles/image_processor.dir/
   TARGET_PDB = image_processor.pdb
 
-build CMakeFiles/image_processor.dir/filters/crystallize.cpp.o: CXX_COMPILER__image_processor_Debug /home/artem/dev/cpp/image_processor/filters/crystallize.cpp || cmake_object_order_depends_target_image_processor
+build CMakeFiles/image_processor.dir/filters/crystallize.cpp.o: CXX_COMPILER__image_processor_Debug /home/artem/dev/cpp/ImageProcessor/filters/crystallize.cpp || cmake_object_order_depends_target_image_processor
   DEP_FILE = CMakeFiles/image_processor.dir/filters/crystallize.cpp.o.d
   FLAGS = -O2 -Werror -Wall -Wextra -fsanitize=address,undefined -fno-sanitize-recover=all -g -Wall -Werror -Wextra -O2 -std=gnu++20
   OBJECT_DIR = CMakeFiles/image_processor.dir
@@ -187,7 +187,7 @@ build image_processor: CXX_EXECUTABLE_LINKER__image_processor_Debug CMakeFiles/i
 # =============================================================================
 
 #############################################
-# Folder: /home/artem/dev/cpp/image_processor/cmake-build-debug
+# Folder: /home/artem/dev/cpp/ImageProcessor/cmake-build-debug
 
 build all: phony image_processor
 

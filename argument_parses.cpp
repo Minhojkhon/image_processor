@@ -45,11 +45,11 @@ void Parser::PrintHelp() const {
 
 std::vector<std::string_view> Parser::Parse(size_t argc, char **argv) {
     std::vector<std::string_view> res;
-    if (argc < 3) {
+    if (argc < 2) {
         throw std::logic_error("wrong argument");
     }
     for (size_t i = 0; i < positional_args_.size(); ++i) {
-        if (!keyword_fields_.contains(argv[i + 1])) {
+        if (keyword_fields_.contains(argv[i + 1])) {
 
             throw std::logic_error("wrong argument");
         }

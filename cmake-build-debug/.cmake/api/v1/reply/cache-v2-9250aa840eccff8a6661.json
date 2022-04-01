@@ -55,7 +55,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/home/artem/dev/cpp/image_processor/cmake-build-debug"
+			"value" : "/home/artem/dev/cpp/ImageProcessor/cmake-build-debug"
 		},
 		{
 			"name" : "CMAKE_CACHE_MAJOR_VERSION",
@@ -579,7 +579,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/home/artem/dev/cpp/image_processor"
+			"value" : "/home/artem/dev/cpp/ImageProcessor"
 		},
 		{
 			"name" : "CMAKE_INSTALL_PREFIX",
@@ -1111,7 +1111,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/home/artem/dev/cpp/image_processor/cmake-build-debug"
+			"value" : "/home/artem/dev/cpp/ImageProcessor/cmake-build-debug"
 		},
 		{
 			"name" : "image_processor_IS_TOP_LEVEL",
@@ -1135,7 +1135,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/home/artem/dev/cpp/image_processor"
+			"value" : "/home/artem/dev/cpp/ImageProcessor"
 		}
 	],
 	"kind" : "cache",

@@ -49,8 +49,8 @@
 	"kind" : "codemodel",
 	"paths" : 
 	{
-		"build" : "/home/artem/dev/cpp/image_processor/cmake-build-debug",
-		"source" : "/home/artem/dev/cpp/image_processor"
+		"build" : "/home/artem/dev/cpp/ImageProcessor/cmake-build-debug",
+		"source" : "/home/artem/dev/cpp/ImageProcessor"
 	},
 	"version" : 
 	{
