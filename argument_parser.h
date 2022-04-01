@@ -39,6 +39,7 @@ public:
 
     void PrintHelp() const;
 
+private:
     StrToRefs positional_args_;
     StrToArgs keyword_fields_;
 };
