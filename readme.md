@@ -73,25 +73,35 @@ C[x][y] =
 
 Если запрошенные ширина или высота превышают размеры исходного изображения, выдается доступная часть изображения.
 
+![](examples/crop.bmp)
+
 #### Grayscale (-gs)
 Преобразует изображение в оттенки серого по формуле
 
 ![encoding](https://latex.codecogs.com/svg.image?R'%20=%20G'%20=%20B'%20=0.299%20R%20&plus;%200%20.587%20G%20&plus;%200%20.%20114%20B)
+
+![](examples/grayscale.bmp)
 
 #### Negative (-neg)
 Преобразует изображение в негатив по формуле
 
 ![encoding](https://latex.codecogs.com/svg.image?R'%20=%201%20-%20R,%20G'%20=%201%20-%20G,%20B'%20=%201%20-%20B)
 
+![](examples/negative.bmp)
+
 #### Sharpening (-sharp)
 Повышение резкости. Достигается применением матрицы
 
 ![encoding](https://latex.codecogs.com/svg.image?%5Cbegin%7Bbmatrix%7D%20&%20-1%20&%20%20%5C%5C-1%20&%205%20&%20-1%20%5C%5C%20&%20-1%20&%20%20%5C%5C%5Cend%7Bbmatrix%7D)
 
+![](examples/sharp.bmp)
+
 #### Edge Detection (-edge threshold)
 Выделение границ. Изображение переводится в оттенки серого и применяется матрица
 
 ![encoding](https://latex.codecogs.com/svg.image?%5Cbegin%7Bbmatrix%7D%20&%20-1%20&%20%20%5C%5C-1%20&%204%20&%20-1%20%5C%5C%20&%20-1%20&%20%20%5C%5C%5Cend%7Bbmatrix%7D)
+
+![](examples/edge.bmp)
 
 Пиксели со значением, превысившим `threshold`, окрашиваются в белый, остальные – в черный.
 
@@ -105,7 +115,11 @@ C[x][y] =
 
 Существуют различные варианты реализации и оптимизации вычисления этого фильтра, описание есть [в Википедии](https://ru.wikipedia.org/wiki/Размытие_по_Гауссу).
 
+![](examples/blur.bmp)
+
 ### Дополнительные фильтры
 
 [Crystallize](https://developer.apple.com/library/archive/documentation/GraphicsImaging/Reference/CoreImageFilterReference/index.html#//apple_ref/doc/filter/ci/CICrystallize)
 
+
+![](examples/crystall.bmp)

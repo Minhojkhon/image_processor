@@ -2,7 +2,7 @@ cmake_minimum_required(VERSION 3.17)
 project(image_processor)
 
 set(CMAKE_CXX_STANDARD 20)
-add_compile_options("-Wall" "-Werror" "-Wextra" "-O0")
+add_compile_options("-Wall" "-Werror" "-Wextra" "-O2")
 
 #add_link_options("-lasan")
 
