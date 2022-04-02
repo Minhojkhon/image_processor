@@ -35,7 +35,10 @@ Image::Image() : width_(0), height_(0) {}
 
 Image::Image(size_t width, size_t height) : width_(width), height_(height) {
     colors_.resize(width * height);
+    file_.image_header_.Height = height;
+    file_.image_header_.Width = width;
 }
+
 
 size_t Image::GetWidth() const {
     return width_;
@@ -284,6 +287,8 @@ void Image::BMP::Read(std::ifstream &in) {
     image_header_ = ImageHeader(in);
 }
 
+
+
 void Image::Read(const char *filepath) {
     file_ = BMP();
     std::ifstream str;
@@ -306,12 +311,17 @@ void Image::Read(const char *filepath) {
     }
 }
 
+void Image::BMP::Save(std::ofstream &out) {
+    file_header_.Write(out);
+    image_header_.Write(out);
+}
+
+static uint8_t HEADER_GARBAGE[4] = {0, 0, 0, 0};
+
 void Image::Write(const char *filepath) {
     std::ofstream str;
     str.open(filepath);
-    file_.file_header_.Write(str);
-    file_.image_header_.Write(str);
-    uint8_t header_garbage[4] = {0, 0, 0, 0};
+    file_.Save(str);
     auto line_garbage = CountPadding(width_);
     for (size_t i = 0; i < height_; ++i) {
         for (size_t j = 0; j < width_; ++j) {
@@ -319,12 +329,12 @@ void Image::Write(const char *filepath) {
             uint8_t green = static_cast<uint8_t>(std::clamp(GetColor(j, i).green_, 0., 255.));
             uint8_t blue = static_cast<uint8_t>(std::clamp(GetColor(j, i).blue_, 0., 255.));
 
-            uint8_t line[3] = {blue, green, red};
+            uint8_t line[3] = {green, red, blue};
 
             str.write(reinterpret_cast<char *>(line), MATRIX_READ_OFFSET[0]);
         }
-        str.write(reinterpret_cast<char *>(header_garbage), line_garbage);
     }
+    str.write(reinterpret_cast<char *>(HEADER_GARBAGE), line_garbage);
 }
 
 

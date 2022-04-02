@@ -9,6 +9,8 @@
 
 Image Crystallize::Apply(Image &img) {
     Image new_img(img.GetWidth(), img.GetHeight());
+    new_img.file_.image_header_ = img.file_.image_header_;
+    new_img.file_.file_header_ = img.file_.file_header_;
     std::vector<std::pair<size_t, size_t>> points;
     points.resize(cnt_);
     for (size_t i = 0; i < cnt_; ++i) {

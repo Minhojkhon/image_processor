@@ -60,6 +60,9 @@ std::vector<std::string_view> Parser::Parse(size_t argc, char **argv) {
         auto it = keyword_fields_.find(argv[i]);
         size_t n;
         try {
+            if (it == keyword_fields_.end()) {
+                throw std::logic_error("wrong argument");
+            }
             n = it->second.size();
         }
         catch (...) {

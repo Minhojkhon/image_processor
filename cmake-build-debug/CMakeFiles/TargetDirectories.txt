@@ -1,3 +1,0 @@
-/home/artem/dev/cpp/ImageProcessor/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-/home/artem/dev/cpp/ImageProcessor/cmake-build-debug/CMakeFiles/edit_cache.dir
-/home/artem/dev/cpp/ImageProcessor/cmake-build-debug/CMakeFiles/image_processor.dir

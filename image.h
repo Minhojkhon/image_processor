@@ -51,12 +51,6 @@ public:
 
         void Save(std::ofstream &out);
 
-        std::vector<Color> GetPixelData() const;
-
-        void SetPixelData(std::vector<Color> &pixel_data);
-
-        void SetImageSizes(size_t width, size_t height);
-
         struct FileHeader {
             uint16_t Type;
             uint32_t Size;
@@ -95,10 +89,10 @@ public:
         FileHeader file_header_;
         ImageHeader image_header_;
     };
+    BMP file_;
 
 private:
-    size_t width_ = file_.image_header_.Width;
-    size_t height_ = file_.image_header_.Height;
+    size_t width_;
+    size_t height_;
     std::vector<Color> colors_;
-    BMP file_;
 };
