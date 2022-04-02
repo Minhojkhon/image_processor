@@ -9,6 +9,8 @@ static const int FIVE = 5;
 
 Image Sharpening::Apply(Image &img) {
     Image res(img.GetWidth(), img.GetHeight());
+    res.file_.image_header_ = img.file_.image_header_;
+    res.file_.file_header_ = img.file_.file_header_;
     for (size_t i = 0; i < img.GetHeight(); ++i) {
         for (size_t j = 0; j < img.GetWidth(); ++j) {
             int red = 0, blue = 0, green = 0;

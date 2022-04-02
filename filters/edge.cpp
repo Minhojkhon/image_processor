@@ -8,6 +8,8 @@
 
 Image EdgeDetection::Apply(Image &img) {
     Image res(img.GetWidth(), img.GetHeight());
+    res.file_.file_header_ = img.file_.file_header_;
+    res.file_.image_header_ = img.file_.image_header_;
     Grayscale grayscale;
     res = grayscale.Apply(img);
     for (size_t i = 0; i < img.GetHeight(); ++i) {

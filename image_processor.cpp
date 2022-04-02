@@ -10,13 +10,13 @@
 #include "filters/sharpening.h"
 #include <iostream>
 
-static const std::string BLUR_STR = "-blur";
-static const std::string CROP_STR = "-crop";
-static const std::string NEG_STR = "-neg";
-static const std::string GS_STR = "-gs";
-static const std::string SHARP_STR = "-sharp";
-static const std::string EDGE_STR = "-edge";
-static const std::string CR_STR = "-cr";
+static const std::string_view BLUR_STR = "-blur";
+static const std::string_view CROP_STR = "-crop";
+static const std::string_view NEG_STR = "-neg";
+static const std::string_view GS_STR = "-gs";
+static const std::string_view SHARP_STR = "-sharp";
+static const std::string_view EDGE_STR = "-edge";
+static const std::string_view CR_STR = "-cr";
 
 
 
@@ -55,7 +55,6 @@ int main(int argc, char **argv) {
     }
 
     Image img;
-
     img.Read(input_filename.c_str());
 
     for (auto &param: params) {
