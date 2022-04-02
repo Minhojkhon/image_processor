@@ -117,7 +117,9 @@ C[x][y] =
 
 ![](examples/blur.bmp)
 
-### Дополнительные фильтры
+#### Crystallize (-cr count)
+
+Разбиение изображения на count цветных кристаллов.
 
 [Crystallize](https://developer.apple.com/library/archive/documentation/GraphicsImaging/Reference/CoreImageFilterReference/index.html#//apple_ref/doc/filter/ci/CICrystallize)
 
