@@ -1,6 +1,6 @@
 //
-// Created by Артем Парфенов on 21.03.2022.
-// most of the code is taken from seminars
+// Created by Minhojkhon Babaev on 03.05.2022.
+//
 
 #pragma once
 
